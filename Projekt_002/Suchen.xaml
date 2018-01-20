@@ -1,0 +1,33 @@
+﻿<Page x:Class="Projekt_002.Suchen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekt_002"
+      mc:Ignorable="d" 
+      d:DesignHeight="300"
+      Title="Suchen" Width="307">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Suchleiste" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="208" Margin="10,51,0,0" Grid.ColumnSpan="4"/>
+        <Button Content="Suchen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Margin="166,51,0,0" Click="Button_Click" Grid.Column="2" Grid.ColumnSpan="2" Height="23"/>
+        <ListView SelectionMode="Single" x:Name="listSuchergebnisse" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="153" Margin="10,107,0,0" VerticalAlignment="Top" Width="286" SelectionChanged="listSuchergebnisse_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="80" Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Width="80" Header="Genre" DisplayMemberBinding="{Binding Genre}"/>
+                    <GridViewColumn Width="60" Header="Preis" DisplayMemberBinding="{Binding Preis}"/>
+                    <GridViewColumn Width="60" Header="Bewertung" DisplayMemberBinding="{Binding Bewertung}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Details" Grid.Column="3" HorizontalAlignment="Left" Margin="156,265,0,0" VerticalAlignment="Top" Width="73" Height="25" Click="Button_Click_1"/>
+
+    </Grid>
+</Page>

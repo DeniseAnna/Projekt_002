@@ -1,0 +1,24 @@
+﻿<Page x:Class="Projekt_002.Kunden_Einzelverwaltung"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projekt_002"
+             mc:Ignorable="d" Height="402" Width="373.5">
+    <Grid>
+        <Label Content="Kunden-Einzelverwaltung" HorizontalAlignment="Left" Margin="54,0,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Benutzername" HorizontalAlignment="Left" Margin="76,42,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="E-Mail-Adresse" HorizontalAlignment="Left" Margin="76,313,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="Bnamebox" HorizontalAlignment="Left" Height="23" Margin="76,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="16"/>
+        <TextBox x:Name="Emailbox" HorizontalAlignment="Left" Height="23" Margin="76,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="16"/>
+        <Button Content="Speichern" HorizontalAlignment="Left" Margin="76,376,0,0" VerticalAlignment="Top" Width="84" FontSize="16" Height="26" Click="Button_Click" RenderTransformOrigin="0.01,1.088"/>
+        <TextBox x:Name="Landbox" HorizontalAlignment="Left" Height="23" Margin="76,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="16"/>
+        <Label Content="Land" HorizontalAlignment="Left" Margin="76,96,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Ort" HorizontalAlignment="Left" Margin="76,150,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="Ortbox" HorizontalAlignment="Left" Height="23" Margin="76,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="16"/>
+        <Label Content="PLZ" HorizontalAlignment="Left" Margin="76,204,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="PLZbox" HorizontalAlignment="Left" Height="23" Margin="76,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="16"/>
+        <Label Content="Straße" HorizontalAlignment="Left" Margin="76,258,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="Straßebox" HorizontalAlignment="Left" Height="23" Margin="76,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="16"/>
+    </Grid>
+</Page>

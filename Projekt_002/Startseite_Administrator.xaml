@@ -1,0 +1,26 @@
+﻿<Page x:Class="Projekt_002.Startseite_Administrator"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projekt_002"
+             mc:Ignorable="d" Height="316.216" Width="527.027">
+    <Grid Height="316" VerticalAlignment="Top">
+        <Label Content="Startseite Administrator" HorizontalAlignment="Left" Margin="144,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button Content="Warenkorb" HorizontalAlignment="Left" Margin="190,68,0,0" VerticalAlignment="Top" Width="119" Height="31" FontSize="18" Click="Button_Click"/>
+        <Button Content="Produkt hinzufügen" HorizontalAlignment="Left" Margin="344,130,0,0" VerticalAlignment="Top" Width="173" Height="41" FontSize="18" Click="Button_Click_3"/>
+        <Button Content="Kundenverwaltung" HorizontalAlignment="Left" Margin="344,209,0,0" VerticalAlignment="Top" Width="173" Height="39" FontSize="18" Click="Button_Click_2"/>
+        <Button Content="Suchleiste" HorizontalAlignment="Left" Margin="344,68,0,0" VerticalAlignment="Top" Width="173" Height="31" FontSize="18" Click="Button_Click_1"/>
+        <Button Content="Filter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Margin="26,68,0,0" Height="31" Click="Button_Click_4" FontSize="18"/>
+        <ListView x:Name="AlleSpiele" HorizontalAlignment="Left" Height="147" VerticalAlignment="Top" Width="296" Margin="26,130,0,0" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="80" Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Width="80" Header="Genre" DisplayMemberBinding="{Binding Genre}"/>
+                    <GridViewColumn Width="60" Header="Preis" DisplayMemberBinding="{Binding Preis}"/>
+                    <GridViewColumn Width="60" Header="Bewertung" DisplayMemberBinding="{Binding Bewertung}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

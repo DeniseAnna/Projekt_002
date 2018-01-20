@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Projekt_002.Gekaufte_Spiele"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projekt_002"
+             mc:Ignorable="d" Height="318.243" Width="510.811">
+    <Grid>
+        <Label Content="gekaufte Spiele" HorizontalAlignment="Left" Margin="151,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="KundenName" HorizontalAlignment="Left" Height="23" Margin="10,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListView HorizontalAlignment="Left" Height="137" Margin="114,89,0,0" VerticalAlignment="Top" Width="264">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="80" Header="SpieleName" DisplayMemberBinding="{Binding SpieleName}"/>
+                    <GridViewColumn Width="60" Header="Preis" DisplayMemberBinding="{Binding Preis}"/>
+                    <GridViewColumn Width="60" Header="Key" DisplayMemberBinding="{Binding Key}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

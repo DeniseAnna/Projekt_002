@@ -1,0 +1,22 @@
+﻿<Page x:Class="Projekt_002.Key_Ausgabe"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projekt_002"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Label Content="Key-Ausgabe" HorizontalAlignment="Left" Margin="79,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <ListView HorizontalAlignment="Left" Height="119" Margin="10,92,0,0" VerticalAlignment="Top" Width="203">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="80" Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Width="60" Header="Preis" DisplayMemberBinding="{Binding Preis}"/>
+                    <GridViewColumn Width="60" Header="Key" DisplayMemberBinding="{Binding Key}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Page>

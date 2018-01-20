@@ -1,0 +1,28 @@
+﻿<Page x:Class="Projekt_002.Filter"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekt_002"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600"
+      Title="Filter">
+
+    <Grid>
+        <ListView x:Name="gefiltert" HorizontalAlignment="Left" Height="126" VerticalAlignment="Top" Width="274" Margin="26,165,0,0" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="90" Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Width="90" Header="Genre" DisplayMemberBinding="{Binding Genre}"/>
+                    <GridViewColumn Width="90" Header="Preis" DisplayMemberBinding="{Binding Preis}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ComboBox x:Name="Genre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Margin="26,49,0,0" SelectionChanged="ComboBox_SelectionChanged"/>
+        <ComboBox x:Name="Bewertung" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="180,49,0,0"/>
+        <Button Content="Filtern" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Margin="26,94,0,0" Click="Button_Click" Height="29" FontSize="16"/>
+        <Label Content="Genre" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,13,0,0" FontSize="16"/>
+        <Label Content="Bewertung" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,14,0,0" FontSize="16"/>
+
+    </Grid>
+</Page>
